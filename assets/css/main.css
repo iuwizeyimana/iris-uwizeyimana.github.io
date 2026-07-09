@@ -522,3 +522,11 @@ main {
     justify-self: start;
   }
 }
+
+
+.social-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: inline-block;
+}
