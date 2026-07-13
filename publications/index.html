@@ -10,12 +10,10 @@
 </head>
 
 <style>
-  /* Makes the conference badge behave like a link */
-  .pub-badge-link {
+  .pub-badge {
     color: #ffffff;
   }
 
-  /* Keep the PDF icon aligned beside the publication title. */
   .pub-title-with-pdf {
     display: block;
   }
@@ -28,32 +26,28 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 1.75rem;
-    height: 1.75rem;
     margin-left: 0.45rem;
-    border: 1.5px solid #b42318;
-    border-radius: 0.3rem;
-    color: #b42318;
-    background-color: #fff5f4;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #1d1d1f;
     text-decoration: none;
-    vertical-align: 0.15rem;
-    transition:
-      background-color 0.15s ease,
-      color 0.15s ease,
-      transform 0.15s ease;
+    vertical-align: -0.4rem;
+    transition: transform 0.15s ease, opacity 0.15s ease;
   }
 
   .pub-pdf-link:hover,
   .pub-pdf-link:focus-visible {
-    color: #ffffff;
-    background-color: #b42318;
+    color: #1d1d1f;
+    background: none;
+    opacity: 0.65;
     transform: translateY(-1px);
   }
 
   .pub-pdf-icon {
-    width: 1.15rem;
-    height: 1.15rem;
-    fill: currentColor;
+    width: 2.1rem;
+    height: 2.1rem;
+    overflow: visible;
   }
 </style>
 </head>
@@ -97,9 +91,25 @@
                 href="../papers_pdf/Heterogeneous_Compute.pdf"
                 target="_blank" rel="noopener" title="Open PDF"
                 aria-label="Open PDF: A Heterogeneous Mapping of a Speech Neuroprosthesis Application">
-                <svg class="pub-pdf-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M6 2h8l4 4v16H6V2zm8 1.5V7h3.5L14 3.5zM8 11v7h1.5v-2.4h1.1c1.7 0 2.8-.9 2.8-2.3S12.3 11 10.6 11H8zm1.5 1.3h1c.9 0 1.4.3 1.4 1s-.5 1-1.4 1h-1v-2zm4.8-1.3v7h2.3c2.2 0 3.6-1.3 3.6-3.5S18.8 11 16.6 11h-2.3zm1.5 1.3h.7c1.4 0 2.2.7 2.2 2.2s-.8 2.2-2.2 2.2h-.7v-4.4z" />
+                <svg class="pub-pdf-icon" viewBox="0 0 64 64" aria-hidden="true">
+                  <!-- Document outline -->
+                  <path d="M18 4H43L56 17V56
+               C56 58.2 54.2 60 52 60H18
+               C15.8 60 14 58.2 14 56V8
+               C14 5.8 15.8 4 18 4Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+
+                  <!-- Folded corner -->
+                  <path d="M43 4V17H56" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+
+                  <!-- PDF label box -->
+                  <rect x="4" y="27" width="38" height="21" rx="3" fill="white" stroke="currentColor"
+                    stroke-width="4" />
+
+                  <!-- PDF text -->
+                  <text x="23" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="13"
+                    font-weight="700" fill="currentColor">
+                    PDF
+                  </text>
                 </svg>
               </a>
             </h3>
@@ -120,6 +130,7 @@
           </div>
         </article>
 
+
         <!-- ISPASS 2025 -->
         <article class="pub-item">
           <div class="pub-badge">
@@ -136,9 +147,25 @@
 
               <a class="pub-pdf-link" href="../papers_pdf/Carbon_Aware_Server_Replacement.pdf" target="_blank"
                 rel="noopener" title="Open PDF" aria-label="Open PDF: Carbon-Aware Server Replacement">
-                <svg class="pub-pdf-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M6 2h8l4 4v16H6V2zm8 1.5V7h3.5L14 3.5zM8 11v7h1.5v-2.4h1.1c1.7 0 2.8-.9 2.8-2.3S12.3 11 10.6 11H8zm1.5 1.3h1c.9 0 1.4.3 1.4 1s-.5 1-1.4 1h-1v-2zm4.8-1.3v7h2.3c2.2 0 3.6-1.3 3.6-3.5S18.8 11 16.6 11h-2.3zm1.5 1.3h.7c1.4 0 2.2.7 2.2 2.2s-.8 2.2-2.2 2.2h-.7v-4.4z" />
+                <svg class="pub-pdf-icon" viewBox="0 0 64 64" aria-hidden="true">
+                  <!-- Document outline -->
+                  <path d="M18 4H43L56 17V56
+               C56 58.2 54.2 60 52 60H18
+               C15.8 60 14 58.2 14 56V8
+               C14 5.8 15.8 4 18 4Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+
+                  <!-- Folded corner -->
+                  <path d="M43 4V17H56" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+
+                  <!-- PDF label box -->
+                  <rect x="4" y="27" width="38" height="21" rx="3" fill="white" stroke="currentColor"
+                    stroke-width="4" />
+
+                  <!-- PDF text -->
+                  <text x="23" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="13"
+                    font-weight="700" fill="currentColor">
+                    PDF
+                  </text>
                 </svg>
               </a>
             </h3>
@@ -159,6 +186,7 @@
           </div>
         </article>
 
+
         <!-- MICRO 2022 -->
         <article class="pub-item">
           <div class="pub-badge">MICRO 2022</div>
@@ -175,9 +203,25 @@
                 href="https://www.eecg.utoronto.ca/~ganesa10/assets/pdfs/altocumulus-micro-2022.pdf" target="_blank"
                 rel="noopener" title="Open PDF"
                 aria-label="Open PDF: Altocumulus: Scalable Scheduling for Nanosecond-Scale Remote Procedure Calls">
-                <svg class="pub-pdf-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M6 2h8l4 4v16H6V2zm8 1.5V7h3.5L14 3.5zM8 11v7h1.5v-2.4h1.1c1.7 0 2.8-.9 2.8-2.3S12.3 11 10.6 11H8zm1.5 1.3h1c.9 0 1.4.3 1.4 1s-.5 1-1.4 1h-1v-2zm4.8-1.3v7h2.3c2.2 0 3.6-1.3 3.6-3.5S18.8 11 16.6 11h-2.3zm1.5 1.3h.7c1.4 0 2.2.7 2.2 2.2s-.8 2.2-2.2 2.2h-.7v-4.4z" />
+                <svg class="pub-pdf-icon" viewBox="0 0 64 64" aria-hidden="true">
+                  <!-- Document outline -->
+                  <path d="M18 4H43L56 17V56
+               C56 58.2 54.2 60 52 60H18
+               C15.8 60 14 58.2 14 56V8
+               C14 5.8 15.8 4 18 4Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+
+                  <!-- Folded corner -->
+                  <path d="M43 4V17H56" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+
+                  <!-- PDF label box -->
+                  <rect x="4" y="27" width="38" height="21" rx="3" fill="white" stroke="currentColor"
+                    stroke-width="4" />
+
+                  <!-- PDF text -->
+                  <text x="23" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="13"
+                    font-weight="700" fill="currentColor">
+                    PDF
+                  </text>
                 </svg>
               </a>
             </h3>
